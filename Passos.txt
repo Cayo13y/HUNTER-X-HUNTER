@@ -1,38 +1,205 @@
-1. Reset / global (já feito ✅)
-2. Header / topo (já feito ✅)
-3. Menu expandido (já feito ✅)
-4. Faixa de Vídeo (já feito ✅)
-5. Introdução (já feito ✅)
-6. Botão voltar ao topo (já feito ✅)
-7. Footer / créditos (já feito ✅)
-8. Responsivo
-9. Animação Introdutória antes de entrar no site
+Ideia do portal.
+
+Não ser uma wiki comum. Ser um portal da comunidade de Hunter x Hunter.
+
+Quando a pessoa entra, ela sentir que está entrando no universo da obra.
+
+🏠 Home: Deixa do jeito que está.
 
 
 
-OBS: Anotações de como funcinam algumas partes do código (Hovers, animações, fundos e etc...)
-----------------------------------------------------------------------------------------------
-1° Hover do togashi-link na seção hero:
+________________________________________________________
+👤 Usuário
 
--linear-gradient(to right, ...): Cria um gradiente 
-linear da esquerda → para a direita.
+Sem cadastro pode:
+- navegar
+- pesquisar
+- ler personagens
+- ver arcos
 
--background-size 200% 100%: O 200% é a largura do fundo que vai ficar com o dobro do elemento,
-e os 100% é a altura do fundo que vai ocupar exatamente 100% da altura do elemento, ou seja
-está criando um fundo que é 2x mais largo que o elemento, mas tem a mesma altura. Isso é
-muito usado em efeitos de hover animado, gradientes que "deslizam" e etc...
+Com cadastro pode:
+- comentar
+- favoritar
+- montar perfil
+- ganhar conquistas
+- responder quiz
+________________________________________________________
 
--background-position -100%: Isso define onde o fundo começa dentro do elemento. -100%
-desloca o fundo totalmente para esquerda. Como o fundo tem 200% de largura, quando 
-coloca -100%, ai mostra a segunda metade do fundo.
 
-Muito usado em:
-    Botões com efeito de luz
-    Texto com gradiente animado
-    Efeito de scan (muito estiloso pra site de mangá 👀)
 
-OBS: Porque pseudo-elementos (::before e ::after) são inline por padrão.
-Ou seja, eles se comportam como texto.
+________________________________________________________
+🔎 Pesquisa
 
-Colocando display block, ele respeita as regras da caixa
-----------------------------------------------------------------------------------------------
+Uma barra de pesquisa global.
+
+Se pesquisar: ex: hisoka
+
+aparece:
+- Personagem
+- Arcos onde aparece
+- Técnicas
+
+Tudo na mesma busca.
+________________________________________________________
+
+
+
+________________________________________________________
+👤 Página dos personagens
+
+Os personagens da obra, clicando aparece:
+- Imagem grande 
+- Nome
+- Descrição
+- Depois várias abas.
+
+Informações:
+- idade
+- altura
+- peso
+- aniversário
+________________________________________________________
+
+
+
+________________________________________________________
+Nen:
+- tipo
+- Explicação
+- Habilidades
+________________________________________________________
+
+
+
+________________________________________________________
+Relações:
+- Amigos
+- Inimigos
+- Família
+- Mestre
+- Aprendizes
+
+
+Participação:
+- Arcos
+- Momentos importantes.
+
+
+Galeria:
+- Imagens
+
+
+Comentários:
+- Comunidade discutindo sobre o personagem.
+________________________________________________________
+
+
+
+________________________________________________________
+📖 Página do arco
+
+Exemplo:
+
+Arco das Formigas Quimera
+
+Teria: 
+- Resumo
+- Cronologia
+- Lista de personagens
+- Principais lutas
+- Galeria
+- Comentários
+_______________________________________________________
+
+
+
+_______________________________________________________
+⭐ Perfil do usuário
+
+- Foto
+- Banner
+- Nickname
+- Bio
+- Personagem favorito (em vez de escrever, puxa da página personagens e seleciona pra aprecer no perfil)
+- Tipo de Nen (puxa da página de nen)
+- conquistas
+- Quantidade de Comentários
+- Quantidade de favoritos.
+- Data de entrada.
+_______________________________________________________
+
+
+
+_______________________________________________________
+Conta do usuário:
+
+Ser autenticado com Google
+Nome de usuário, ai cria a senha baseado na conta Google
+
+Caso esqueça a senha, manda um email com linl, clica no link
+e envia pra uma página personalziada de redefinir a senha
+
+_______________________________________________________
+
+
+
+_______________________________________________________
+❤️ Favoritos
+
+Dentro do perdil do usuário, vai ter uma uma página (no pique steam),
+onde ele monta praticamente sua coleção de favoritos com:
+
+- personagens
+- arcos
+- organizações
+_______________________________________________________
+
+
+
+_______________________________________________________
+🏆 Sistema de conquistas
+
+Por exemplo:
+
+🥉 Primeiro comentário
+🥈 Favoritou 10 personagens.
+🥇 Visitou todas as páginas dos protagonistas.
+🏅 Completou o Quiz do Nen.
+_______________________________________________________
+
+
+
+_______________________________________________________
+🧠 Quiz do Nen
+
+Na home teria um botão (Descubra seu tipo de Nen)
+
+O usuário responde perguntas.
+
+No final recebe:
+- Sua categoria.
+- Uma explicação.
+- Personagens parecidos.
+- Pode salvar isso no perfil.
+_______________________________________________________
+
+
+
+_______________________________________________________
+👑 Painel administrativo
+
+A administrador consegue cadastrar tudo.
+
+Crud de:
+- Personagens
+- arcos
+- organizações
+- categorias Nen
+- ver usuários
+_______________________________________________________
+
+
+
+
+
+docker compose exec laravel.test npm run dev
