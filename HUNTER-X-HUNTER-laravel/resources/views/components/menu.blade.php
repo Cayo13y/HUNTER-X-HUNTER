@@ -12,7 +12,7 @@
 
         <div class="aside-section aside-right">
             <ul class="aside-list">
-                <li data-number="01"><a href="index.html" data-i18n="nav.intro">Introdução</a></li>
+                <li data-number="01"><a href="{{ url('/') }}" data-i18n="nav.intro">Introdução</a></li>
                 <li data-number="02"><a href="#" data-i18n="nav.historia">História</a></li>
                 <li data-number="03"><a href="#" data-i18n="nav.personagens">Personagens</a></li>
                 <li data-number="04"><a href="#" data-i18n="nav.trilha">Trilha Sonora</a></li>
@@ -21,7 +21,7 @@
             </ul>
 
             <div class="menu-background-image">
-                <img src="assets/images/gon_menu.png" alt="Gon Freecss">
+                <img src="{{ asset('assets/images/gon_menu.png') }}" alt="Gon Freecss">
             </div>
         </div>
     </aside>
